@@ -12,7 +12,7 @@ https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Datas
 
 It should be unzipped so that the data is in a directory entitled "UCI HAR Dataset" which is in your working directory.
 
-### Notes
+### How this Script Works
 
 Datasets are loaded and combined so that all of the test and train data is in one dataframe.  Also, the labels for each activity and the student identifiers are merged with this data set so that we can analyze the data based on student and activity.
 
