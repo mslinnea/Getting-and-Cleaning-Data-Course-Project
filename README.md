@@ -16,4 +16,6 @@ It should be unzipped so that the data is in a directory entitled "UCI HAR Datas
 
 Datasets are loaded and combined so that all of the test and train data is in one dataframe.  Also, the labels for each activity and the student identifiers are merged with this data set so that we can analyze the data based on student and activity.
 
-To make summarizing the data easier, the data frame is convered to a local data frame using the dplyr package. Then the data is summarized into a tidy data set. 
+To make summarizing the data easier, the data frame is converted to a local data frame using the dplyr package. Then the data is summarized into a tidy data set.  
+
+This script outputs a text file that can be read back into a data frame with "read.table("./summaryofdata.txt", header=TRUE)"
