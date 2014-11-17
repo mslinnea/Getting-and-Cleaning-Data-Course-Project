@@ -1,5 +1,4 @@
 ## Load Datasets
-
 subject_test <- read.table("./UCI HAR Dataset/test/subject_test.txt")
 subject_train <- read.table("./UCI HAR Dataset/train/subject_train.txt")
 x_test <- read.table("./UCI HAR Dataset/test/X_test.txt")
@@ -10,18 +9,15 @@ features <- read.table("./UCI HAR Dataset/features.txt")
 activities <-read.table("./UCI HAR Dataset/activity_labels.txt")
 
 ## Bind the Activity Labels to the Experimental Data
-
 test_data <- cbind(y_test, x_test)
 train_data <- cbind(y_train, x_train)
 
 ## Combine the Test Data and Train Data into one dataset
-
 all_data <- rbind(test_data, train_data)
 
 
 ## Extract the names out of the features dataset
 ## And Label the Data set with Descriptive Activity Names
-
 features$V2 <- as.character(features$V2)
 names(all_data) <- c("Activity", features$V2)
 
@@ -36,7 +32,6 @@ all_data <- all_data[, unique(colnames(all_data))]
 
 ## Use the Dplyr package to select only 
 ## the measurements on the mean and standard deviation
-
 library(dplyr)
 all_data_tbl <- tbl_df(all_data)
 select_data_tbl <- select(all_data_tbl, Subject, Activity, contains("mean"), contains("std"))
