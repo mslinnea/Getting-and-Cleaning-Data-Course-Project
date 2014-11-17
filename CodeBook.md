@@ -23,4 +23,4 @@ There were 30 students who participated in this experiment.
 Numbers 1 through 30 indicate the student id.
 
 ##Variables 3-75
-These variables are the mean of the mean or the mean of the standard deviation.  The variable name is the same name as in the original data set.  Reference the features_info.txt of the original data set for a description of these measurements. 
+These variables are the mean of the original measurements.  The variable name is the same name as in the original data set.  Reference the features_info.txt of the original data set for a description of these measurements. 
